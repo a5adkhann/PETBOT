@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETBOT - Asad</title>
+    <link rel="stylesheet" href="./vendor/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar-desktop">
+      <div class="logo">
+        <img src="./media/logo.png" alt="" />
+      </div>
+      <div class="items">
+        <ul>
+          <li>
+            <a style="text-decoration: none; color: black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none; color: black" href="./about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              style="text-decoration: none; color: black"
+              href="./categories.html"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none; color: black" href="./gallery.html"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none; color: black" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <div class="navbar-mobile hide">
+      <p>
+        <a style="text-decoration: none; color: black" href="./index.html"
+          >Home</a
+        >
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./about.html"
+          >About</a
+        >
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./categories.html"
+          >Categories</a
+        >
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./gallery.html"
+          >Gallery</a
+        >
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./contact.html"
+          >Contact</a
+        >
+      </p>
+    </div>
+    <!-- End -->
+
+    <!-- Slider -->
+    <section id="slider">
+      <div class="main-container">
+        <div class="slider-wrapper">
+          <button
+            class="arrow prev"
+            onclick="
+              document
+                .querySelector('.slider')
+                .scrollBy({ left: -window.innerWidth, behavior: 'smooth' })
+            "
+          >
+            ❮
+          </button>
+          <button
+            class="arrow next"
+            onclick="
+              document
+                .querySelector('.slider')
+                .scrollBy({ left: window.innerWidth, behavior: 'smooth' })
+            "
+          >
+            ❯
+          </button>
+
+          <div class="slider">
+            <div class="slide" id="slide-1">
+              <img src="./media/1.jpeg" alt="Slide 1" />
+            </div>
+
+            <div class="slide" id="slide-2">
+              <img src="./media/2.jpeg" alt="Slide 2" />
+            </div>
+
+            <div class="slide" id="slide-3">
+              <img src="./media/3.jpeg" alt="Slide 3" />
+            </div>
+
+            <div class="slide" id="slide-4">
+              <img src="./media/4.jpeg" alt="Slide 4" />
+            </div>
+          </div>
+
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
+    <!-- Bottles Cards -->
+    <div class="section-header">
+      <h1>Categories</h1>
+    </div>
+    <div class="category-filter">
+      <button>ALL</button>
+      <button>Bottles</button>
+      <button>Jars</button>
+    </div>
+    <div class="cards-container"></div>
+    <!-- End -->
+
+    <!-- Gallery -->
+    <div class="section-header">
+      <h1>Gallery</h1>
+    </div>
+    <div class="gallery-container"></div>
+    <!-- End -->
+
+    <!-- Feedback -->
+    <div class="section-header">
+      <h1>Feedback</h1>
+    </div>
+    <div class="feedback-container">
+      <div class="section-container">
+        <div class="feedback-item">
+          <h4>Ali Khan</h4>
+          <p><strong>Product:</strong> Plastic Bottle</p>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>Very good quality bottle. Totally satisfied!</p>
+        </div>
+
+        <div class="feedback-item">
+          <h4>Ali Khan</h4>
+          <p><strong>Product:</strong> Plastic Bottle</p>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>Very good quality bottle. Totally satisfied!</p>
+        </div>
+
+        <div class="feedback-item">
+          <h4>Ali Khan</h4>
+          <p><strong>Product:</strong> Plastic Bottle</p>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>Very good quality bottle. Totally satisfied!</p>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="#" method="post">
+          <label for="name">Full Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <br /><br />
+
+          <label for="email">Email Address</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br /><br />
+
+          <label for="product">Product Category</label><br />
+          <select id="product" name="product">
+            <option value>Select category</option>
+            <option value="Bottle">Bottle</option>
+            <option value="Jar">Jar</option>
+          </select>
+          <br /><br />
+
+          <label for="rating">Rating</label><br />
+          <select id="rating" name="rating">
+            <option value>Select rating</option>
+            <option value="5">★★★★★ Excellent</option>
+            <option value="4">★★★★ Very Good</option>
+            <option value="3">★★★ Good</option>
+            <option value="2">★★ Average</option>
+            <option value="1">★ Poor</option>
+          </select>
+          <br /><br />
+
+          <label for="message">Your Feedback</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your feedback here..."
+            required
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Contact -->
+    <div class="section-header">
+      <h1>Contact</h1>
+    </div>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <p>
+          If you have any questions about our bottles or jars, feel free to get
+          in touch with us.
+        </p>
+        <p><strong>Address:</strong> 123 Bottle Street, Karachi, Pakistan</p>
+        <p><strong>Phone:</strong> +92 300 1234567</p>
+        <p><strong>Email:</strong> info@bottleshop.com</p>
+      </div>
+
+      <div class="contact-form-container">
+        <form action="#" method="post">
+          <label>Full Name</label><br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <br /><br />
+
+          <label>Email Address</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br /><br />
+
+          <label>Subject</label><br />
+          <input type="text" name="subject" placeholder="Subject" />
+          <br /><br />
+
+          <label>Message</label><br />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <!-- About / Brand -->
+        <div class="footer-about">
+          <h3>PETBOT</h3>
+          <p>
+            Your one-stop shop for bottles, jars, and more. Quality products for
+            everyday use.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>123 Bottle Street, Karachi, Pakistan</p>
+          <p>Phone: +92 300 1234567</p>
+          <p>Email: info@bottleshop.com</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 PETBOT. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End -->
+
+    <script src="./vendor/js/script.js"></script>
+
+    <script src="./vendor/js/apicall.js"></script>
+  </body>
+</html>
