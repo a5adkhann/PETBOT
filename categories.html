@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Categories</title>
+    <link rel="stylesheet" href="./vendor/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -18,7 +19,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./vendor/css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -38,12 +38,16 @@
               >About</a
             >
           </li>
-          <li>
+          <li class="dropdown">
             <a
               style="text-decoration: none; color: black"
               href="./categories.html"
-              >Categories</a
+              >Categories &#9662;</a
             >
+            <ul class="dropdown-menu">
+              <li><a href="./jars.html">Jars</a></li>
+              <li><a href="./bottles.html">Bottles</a></li>
+            </ul>
           </li>
           <li>
             <a style="text-decoration: none; color: black" href="./gallery.html"
@@ -72,10 +76,14 @@
           >About</a
         >
       </p>
-      <p>
+      <p class="mobile-dropdown">
         <a style="text-decoration: none; color: black" href="./categories.html"
-          >Categories</a
+          >Categories &#9662;</a
         >
+        <span class="mobile-dropdown-items hide">
+          <a href="./jars.html">Jars</a><br />
+          <a href="./bottles.html">Bottles</a>
+        </span>
       </p>
       <p>
         <a style="text-decoration: none; color: black" href="./gallery.html"
@@ -98,19 +106,17 @@
 
     <!-- End -->
 
-       <!-- Bottles Cards -->
-        <div class="section-header">
-            <h1>Categories</h1>
-        </div>
-        <div class="category-filter">
-            <button>ALL</button>
-            <button>Bottles</button>
-            <button>Jars</button>
-        </div>
-        <div class="cards-container">
-
-        </div>
-        <!-- End -->
+       <!-- Products Cards -->
+    <div class="section-header">
+      <h1>Categories</h1>
+    </div>
+    <div class="category-filter">
+      <button class="active_category">ALL</button>
+      <button>Bottle</button>
+      <button>Jar</button>
+    </div>
+    <div class="cards-container"></div>
+    <!-- End -->
 
     <!-- Footer -->
 

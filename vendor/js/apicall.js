@@ -1,4 +1,5 @@
-fetch("../../api/bottles.json")
+// For All
+fetch("../../api/products.json")
   .then((res) => res.json())
   .then((data) => {
     let bottle = "";
@@ -24,6 +25,69 @@ fetch("../../api/bottles.json")
       document.getElementsByClassName("cards-container")[0].innerHTML = bottle;
     });
   });
+
+
+// For Jars
+fetch("../../api/products.json")
+  .then((res) => res.json())
+  .then((data) => {
+    let bottle = "";
+    data.filter(item => item.category === "Jar").forEach((element) => {
+      bottle += `
+            <div class="card">
+                <div class="card-banner">
+                    <img src="${element.img}" alt="">
+                </div>
+                <div class="card-text">
+                <div>
+                    <h3>${element.name}</h3>
+                    <p>${element.capacity}</p>
+                </div>
+                <div>
+                    <p>${element.category}</p>
+                    <p>RS/- ${element.price}</p>
+                </div>
+                </div>
+            </div>
+        `;
+
+      document.getElementsByClassName("jars-cards-container")[0].innerHTML = bottle;
+    });
+  });
+
+  // For Bottles
+fetch("../../api/products.json")
+  .then((res) => res.json())
+  .then((data) => {
+    let bottle = "";
+    data.filter(item => item.category === "Bottle").forEach((element) => {
+      bottle += `
+            <div class="card">
+                <div class="card-banner">
+                    <img src="${element.img}" alt="">
+                </div>
+                <div class="card-text">
+                <div>
+                    <h3>${element.name}</h3>
+                    <p>${element.capacity}</p>
+                </div>
+                <div>
+                    <p>${element.category}</p>
+                    <p>RS/- ${element.price}</p>
+                </div>
+                </div>
+            </div>
+        `;
+
+      document.getElementsByClassName("bottles-cards-container")[0].innerHTML = bottle;
+    });
+  });
+
+
+
+
+
+
 
 
 

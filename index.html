@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
   </head>
   <body>
     <!-- Navbar -->
@@ -38,12 +39,16 @@
               >About</a
             >
           </li>
-          <li>
+          <li class="dropdown">
             <a
               style="text-decoration: none; color: black"
               href="./categories.html"
-              >Categories</a
+              >Categories &#9662;</a
             >
+            <ul class="dropdown-menu">
+              <li><a href="./jars.html">Jars</a></li>
+              <li><a href="./bottles.html">Bottles</a></li>
+            </ul>
           </li>
           <li>
             <a style="text-decoration: none; color: black" href="./gallery.html"
@@ -72,10 +77,14 @@
           >About</a
         >
       </p>
-      <p>
+      <p class="mobile-dropdown">
         <a style="text-decoration: none; color: black" href="./categories.html"
-          >Categories</a
+          >Categories &#9662;</a
         >
+        <span class="mobile-dropdown-items hide">
+          <a href="./jars.html">Jars</a><br />
+          <a href="./bottles.html">Bottles</a>
+        </span>
       </p>
       <p>
         <a style="text-decoration: none; color: black" href="./gallery.html"
@@ -145,14 +154,14 @@
     </section>
     <!-- End -->
 
-    <!-- Bottles Cards -->
+    <!-- Products Cards -->
     <div class="section-header">
       <h1>Categories</h1>
     </div>
     <div class="category-filter">
-      <button>ALL</button>
-      <button>Bottles</button>
-      <button>Jars</button>
+      <button class="active_category">ALL</button>
+      <button>Bottle</button>
+      <button>Jar</button>
     </div>
     <div class="cards-container"></div>
     <!-- End -->
@@ -165,10 +174,10 @@
     <!-- End -->
 
     <!-- Feedback -->
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <h1>Feedback</h1>
     </div>
-    <div class="feedback-container">
+    <div class="feedback-container" data-aos="fade-up">
       <div class="section-container">
         <div class="feedback-item">
           <h4>Ali Khan</h4>
@@ -249,11 +258,11 @@
     <!-- End -->
 
     <!-- Contact -->
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <h1>Contact</h1>
     </div>
 
-    <section class="contact-section">
+    <section class="contact-section" data-aos="fade-up">
       <div class="contact-info">
         <p>
           If you have any questions about our bottles or jars, feel free to get
@@ -351,7 +360,6 @@
     </footer>
 
     <!-- End -->
-
     <script src="./vendor/js/script.js"></script>
 
     <script src="./vendor/js/apicall.js"></script>

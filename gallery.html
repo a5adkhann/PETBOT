@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="./vendor/css/style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -18,56 +19,85 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./vendor/css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-        <div class="navbar-desktop">
-            <div class="logo">
-                <img src="./media/logo.png" alt="">
-            </div>
-            <div class="items">
-                <ul>
-                    <li>
-                        <a style="text-decoration: none; color: black;" href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none; color: black;" href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none; color: black;" href="./categories.html">Categories</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none; color: black;" href="./gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none; color: black;" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-        </div>
-        <div class="navbar-mobile hide">
-            <p>
-                <a style="text-decoration: none; color: black;" href="./index.html">Home</a>
-            </p>
-            <p>
-                <a style="text-decoration: none; color: black;" href="./about.html">About</a>
-            </p>
-            <p>
-                <a style="text-decoration: none; color: black;" href="./categories.html">Categories</a>
-            </p>
-            <p>
-                <a style="text-decoration: none; color: black;" href="./gallery.html">Gallery</a>
-            </p>
-            <p>
-                <a style="text-decoration: none; color: black;" href="./contact.html">Contact</a>
-            </p>
-        </div>
-        <!-- End -->
+    <div class="navbar-desktop">
+      <div class="logo">
+        <img src="./media/logo.png" alt="" />
+      </div>
+      <div class="items">
+        <ul>
+          <li>
+            <a style="text-decoration: none; color: black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none; color: black" href="./about.html"
+              >About</a
+            >
+          </li>
+          <li class="dropdown">
+            <a
+              style="text-decoration: none; color: black"
+              href="./categories.html"
+              >Categories &#9662;</a
+            >
+            <ul class="dropdown-menu">
+              <li><a href="./jars.html">Jars</a></li>
+              <li><a href="./bottles.html">Bottles</a></li>
+            </ul>
+          </li>
+          <li>
+            <a style="text-decoration: none; color: black" href="./gallery.html"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none; color: black" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <div class="navbar-mobile hide">
+      <p>
+        <a style="text-decoration: none; color: black" href="./index.html"
+          >Home</a
+        >
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./about.html"
+          >About</a
+        >
+      </p>
+      <p class="mobile-dropdown">
+        <a style="text-decoration: none; color: black" href="./categories.html"
+          >Categories &#9662;</a
+        >
+        <span class="mobile-dropdown-items hide">
+          <a href="./jars.html">Jars</a><br />
+          <a href="./bottles.html">Bottles</a>
+        </span>
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./gallery.html"
+          >Gallery</a
+        >
+      </p>
+      <p>
+        <a style="text-decoration: none; color: black" href="./contact.html"
+          >Contact</a
+        >
+      </p>
+    </div>
+    <!-- End -->
 
         <!-- Hero Section -->
     <div class="hero">
