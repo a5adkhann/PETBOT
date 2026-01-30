@@ -354,6 +354,11 @@
     }
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
     width: 300px;
     border: 1px solid lightgray;

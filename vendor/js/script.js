@@ -32,6 +32,7 @@ category_filter_btn.forEach((btn) => {
 
         filteredData.forEach(element => {
           html += `
+          <a href="./product-detail.html?id=${element.id}">
             <div class="card">
               <div class="card-banner">
                 <img src="${element.img}" alt="">
@@ -47,6 +48,7 @@ category_filter_btn.forEach((btn) => {
                 </div>
               </div>
             </div>
+            </a>
           `;
         });
 

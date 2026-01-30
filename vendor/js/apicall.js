@@ -5,6 +5,7 @@ fetch("../../api/products.json")
     let bottle = "";
     data.forEach((element) => {
       bottle += `
+            <a href="./product-detail.html?id=${element.id}">
             <div class="card">
                 <div class="card-banner">
                     <img src="${element.img}" alt="">
@@ -20,6 +21,7 @@ fetch("../../api/products.json")
                 </div>
                 </div>
             </div>
+            </a>
         `;
 
       document.getElementsByClassName("cards-container")[0].innerHTML = bottle;
@@ -34,6 +36,7 @@ fetch("../../api/products.json")
     let bottle = "";
     data.filter(item => item.category === "Jar").forEach((element) => {
       bottle += `
+             <a href="./product-detail.html?id=${element.id}">
             <div class="card">
                 <div class="card-banner">
                     <img src="${element.img}" alt="">
@@ -49,6 +52,7 @@ fetch("../../api/products.json")
                 </div>
                 </div>
             </div>
+            </a>
         `;
 
       document.getElementsByClassName("jars-cards-container")[0].innerHTML = bottle;
@@ -62,6 +66,7 @@ fetch("../../api/products.json")
     let bottle = "";
     data.filter(item => item.category === "Bottle").forEach((element) => {
       bottle += `
+            <a href="./product-detail.html?id=${element.id}">
             <div class="card">
                 <div class="card-banner">
                     <img src="${element.img}" alt="">
@@ -77,19 +82,12 @@ fetch("../../api/products.json")
                 </div>
                 </div>
             </div>
+            </a>
         `;
 
       document.getElementsByClassName("bottles-cards-container")[0].innerHTML = bottle;
     });
   });
-
-
-
-
-
-
-
-
 
   fetch("../../api/gallery.json")
   .then((res) => res.json())
