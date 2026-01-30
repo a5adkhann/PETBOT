@@ -553,6 +553,33 @@
     padding: 65px;
 }
 
+.about-company {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    background: var(--bg);
+    padding-block: 45px;
+}
+
+.about-company > .banner {
+    width: 50%;
+}
+
+.about-company > .text {
+    width: 60%;
+}
+
+.about-company > .text > h1 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    background: var(--heading);
+    
+    background-clip: text;
+    
+    background-clip: text;
+    color: transparent;
+}
+
 /* End */
 
 
