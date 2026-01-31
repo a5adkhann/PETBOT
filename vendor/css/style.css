@@ -8,7 +8,7 @@
 }
 
 :root {
-    --bg: linear-gradient(#7AB2B2, #ccc);
+    --bg: rgba(122, 178, 178, 0.95);
     --btn-bg: #088395;
     --heading: linear-gradient(#7AB2B2, #000);
 }
@@ -362,11 +362,18 @@ a {
 .card {
     width: 300px;
     border: 1px solid lightgray;
+     transition: transform 0.3s ease-in-out;
 }
 
 .card > .card-banner > img {
     width: 100%;
     height: 300px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    border: 1px solid #088395;
 }
 
 .card > .card-text {
@@ -378,6 +385,29 @@ a {
 
 .card > .card-text > h3 {
     text-align: center;
+}
+/* End */
+
+/* Prouduct Detail */
+.product-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.product-detail .product-info button {
+    background: none;
+    width: 100%;
+    padding-block: 10px;
+    border: 1px solid var(--btn-bg);
+    transition: background 0.3s ease-in-out;
+}
+
+.product-detail .product-info button:hover {
+    background: var(--btn-bg);
+    width: 100%;
+    padding-block: 10px;
+    color: white;
 }
 /* End */
 
